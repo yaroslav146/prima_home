@@ -10,11 +10,21 @@ header {
     background-position: center; 
     background-repeat: no-repeat;
     width: 100%;
+    max-height: 50vh;
     padding-bottom: 20px;
 }
 .navigace a{
     text-decoration: none;
     color: white;
+}
+.navigace{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.332);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.37);
+    border-radius: 0px 0px 20px 20px;
 }
 .welcome{
     color: rgba(191, 241, 255, 0.234);
@@ -23,3 +33,4 @@ header {
     text-align: center;
     padding-top: 5%;
 }
+/* https://dbmast.ru/sozdaem-vypadayushhee-menyu-navigacii-na-css3 */
