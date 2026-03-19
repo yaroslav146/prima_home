@@ -2,12 +2,24 @@
 body{
     margin: 0;
 }
-header{
-    background-image: url(obrazky/pozadi1.jpg);
+header {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+        url(obrazky/pozadi1.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 20px;
 }
-.navigace{
-
+.navigace a{
+    text-decoration: none;
+    color: white;
 }
 .welcome{
-
+    color: rgba(191, 241, 255, 0.234);
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5%;
 }
