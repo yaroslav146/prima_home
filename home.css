@@ -3,24 +3,26 @@ body{
 }
 header {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
         url(obrazky/pozadi1.jpg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
     width: 100%;
-    max-height: 50vh;
+    height: auto;
     padding-bottom: 20px;
 }
+
+/* NAVIGACNI PANEL */
+
 .navigace a {
     position: relative;
     text-decoration: none;
     color: white;
-    font-size: 22px;
     padding: 10px 20px;
     border-radius: 10px;
     transition: 0.3s all ease-in;
-    font-size: 40px;
+    font-size: 250%;
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.2);
 }
@@ -28,20 +30,93 @@ header {
     background: rgba(173,216,230,0.2);
     transform: translateY(-2px);
 }
-.navigace {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
+.navigace{
+    width: 100%;
+    padding: 10px 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.ohraniceni{
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigace, .logo, .onPage, .otherPage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo, .onPage, .otherPage{
+
 }
 .navigace h1{
     flex: 1;
     color: aliceblue;
 }
-.logo { flex: 1; }
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo img{
+    width: 100px;
+}
+.navigace h1, a{
+    margin: 7% 0;
+    white-space: nowrap;
+}
+.logo h1{
+    font-family: Kaushan Script;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;    font-family: Kaushan Script;
+    font-weight: 400;
+    color: white;
+}
+
+.onPage {  
+    display: flex;
+    justify-content: center;
+}
+.otherPage {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.onPage ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dropdown {
+    display: inline;
+    position: relative;
+    border-radius: 10px;
+}
+.dropdown-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 150px;
+}
+.dropdown-content a {
+    color: white;
+    display: block;
+    margin: 0;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+/* PODNAVIIGACE */
 .welcome{
     color: rgba(191, 241, 255, 0.234);
     -webkit-text-stroke: 0.1px rgb(255, 255, 255);
@@ -55,47 +130,4 @@ header {
 .welcome p{
     font-family: Kaushan Script;
     font-size: 50px;
-}
-.onPage { 
-    flex: 1; 
-    display: flex;
-    justify-content: center;
-}
-.otherPage { 
-    flex: 1; 
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-.onPage ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown {
-    display: inline;
-    position: relative;
-    border-radius: 10px;
-}
-
-.dropdown-content {
-    width: 100%;
-    display: none;
-    position: absolute;
-
-    left: 0;
-
-    border-radius: 10px;
-    padding: 10px;
-    min-width: 150px;
-}
-.dropdown-content a {
-    color: white;
-    font-size: 20px;
-    display: block;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
 }
