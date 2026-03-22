@@ -17,25 +17,33 @@ header {
 
 .navigace a {
     position: relative;
+    display: block;
+    margin: 0;
     text-decoration: none;
-    color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    transition: 0.3s all ease-in;
     font-size: 250%;
+    color: rgb(213, 98, 255);
+    outline: 2px solid rgba(173, 216, 230, 0);
+    outline-offset: -2px;
+    transition: all .3s ease;
     background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
 }
 .navigace a:hover{
-    background: rgba(173,216,230,0.2);
-    transform: translateY(-2px);
+    transform: scale(0.9);
+    background: rgba(4, 0, 0, 0);
+    outline-offset: 3px;
+    outline-color: aliceblue;
 }
 .navigace{
     width: 100%;
     padding: 10px 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 0px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(3.7px);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 .ohraniceni{
     width: 80%;
@@ -53,10 +61,7 @@ header {
 .logo, .onPage, .otherPage{
 
 }
-.navigace h1{
-    flex: 1;
-    color: aliceblue;
-}
+
 .logo{
     display: flex;
     align-items: center;
@@ -72,10 +77,9 @@ header {
 .logo h1{
     font-family: Kaushan Script;
     font-weight: 400;
-    font-size: 50px;
-    color: white;    font-family: Kaushan Script;
-    font-weight: 400;
-    color: white;
+    font-size: 400%;
+    color: rgb(213, 98, 255);    
+    font-family: Kaushan Script;
 }
 
 .onPage {  
@@ -105,11 +109,12 @@ header {
     border-radius: 10px;
     padding: 10px;
     min-width: 150px;
+    background-color: rgba(24, 147, 255, 0.87);
 }
 .dropdown-content a {
     color: white;
     display: block;
-    margin: 0;
+    margin: 5px;
 }
 .dropdown:hover .dropdown-content {
     display: block;
