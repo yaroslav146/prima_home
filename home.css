@@ -24,16 +24,18 @@ header {
     border-radius: 10px;
     font-size: 250%;
     color: rgb(213, 98, 255);
-    outline: 2px solid rgba(173, 216, 230, 0);
+    outline: 4px solid rgba(255, 255, 255, 0.307);
     outline-offset: -2px;
     transition: all .3s ease;
     background: rgba(255,255,255,0.1);
+    font-family: Kaushan Script;
 }
 .navigace a:hover{
     transform: scale(0.9);
     background: rgba(4, 0, 0, 0);
     outline-offset: 3px;
-    outline-color: aliceblue;
+    outline-color: rgb(255, 89, 236);
+    color: rgb(241, 203, 255);
 }
 .navigace{
     width: 100%;
@@ -78,8 +80,9 @@ header {
     font-family: Kaushan Script;
     font-weight: 400;
     font-size: 400%;
-    color: rgb(213, 98, 255);    
-    font-family: Kaushan Script;
+    color: rgb(212, 0, 255);    
+    font-family: Agbalumo;
+    border-bottom: 4px solid rgb(230, 0, 255);
 }
 
 .onPage {  
@@ -109,12 +112,15 @@ header {
     border-radius: 10px;
     padding: 10px;
     min-width: 150px;
-    background-color: rgba(24, 147, 255, 0.87);
+    background-color: rgba(24, 91, 149, 0.87);
 }
 .dropdown-content a {
-    color: white;
+    color: rgb(213, 98, 255);
     display: block;
     margin: 5px;
+}
+.dropdown-content a:hover{
+    color: rgb(255, 255, 255);
 }
 .dropdown:hover .dropdown-content {
     display: block;
