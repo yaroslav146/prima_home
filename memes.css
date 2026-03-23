@@ -1,0 +1,19 @@
+body{
+    background-image: url(obrazky/pozadi4.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+}
+header{
+
+}
+.logo img{
+    width: 100px;
+}
+.navigace div{
+    display: flex;
+    flex-direction: row;
+}
