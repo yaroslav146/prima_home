@@ -11,6 +11,7 @@ header {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 /* NAVIGACNI PANEL */
@@ -20,7 +21,7 @@ header {
     display: block;
     margin: 0;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 10px;
     font-size: 250%;
     color: rgb(213, 98, 255);
