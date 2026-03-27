@@ -3,16 +3,16 @@ body{
 }
 header {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.281), rgb(0, 0, 0)),
+        linear-gradient(rgba(0, 0, 0, 0.43), rgba(212, 38, 206, 0.375), rgba(201, 46, 46, 0.318), rgb(0, 0, 0)),
         url(obrazky/pozadi1.jpg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    padding-bottom: 20px;
-    margin-bottom: 100px;
-    box-shadow: 0px 0px 50px 150px;
+    padding-bottom: 7vh;
+
+
 }
 html {
   scroll-behavior: smooth;
@@ -138,29 +138,31 @@ html {
     -webkit-text-stroke: 0.1px rgb(255, 255, 255);
     font-size: 40px;
     text-align: center;
-    padding-top: 0.5%;
 }
 .welcome h1{
     font-family: Agbalumo;
+    margin-bottom: 2vh;
 }
 .welcome p{
     font-family: Kaushan Script;
     font-size: 50px;
+    margin: 0;
+    margin-bottom: 10vh;
 }
 
 /* OBSAH */
 
 /* ABOUT SECTION */
 .ohraniceniAbout{
-    max-width: 1200px;
+    max-width: 70vw;
     display: flex;
     align-items: stretch;
     overflow: hidden;
-
-    margin: 10px auto;
+    margin: 0 auto;
     margin-bottom: 0;
+    justify-content: center;
 }
-.about{
+#about{
 
     background-color: rgb(0, 0, 0);
     
@@ -168,37 +170,54 @@ html {
 
 }
 .ohraniceniAbout img{
-    width: 50vw;
-    object-fit: contain;
+
+    object-fit: fill;
+    max-width: 40vw;
+    max-height: 30vh;
 }
 .aboutText{
     width: 50%;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 0px;
     color: aliceblue;
 }
 .half{
     max-width: 50vw;
     z-index: 2;
     margin: 0px auto;
-    padding-left: 20%;
+
 }
 .half p{
-    line-height: 26px;
-    font-size: 25px;
-    margin-bottom: 25px;
+    line-height: 2.5vh;
+    font-size: 2vh;
+    margin-bottom: 2vw;
+    margin-right: 5vw;
+    font-family: Kaushan Script;
+    color: rgb(193, 94, 255);
 }
 .half h2{
-    font-size: 35px;
-    margin-bottom: 15px;
+    font-size: 3vh;
     font-family: Agbalumo;
+    color: rgb(221, 25, 255);
+    text-align: center;
+    margin-right: 5vw;
 }
+
 .aboutObdelnik{
     background: linear-gradient(to left, transparent, rgb(0, 0, 0));
     position: absolute;
     left: 100%;
-    width: 50%;
+    width: 30%;
     height: 100%;
+}
+
+
+/* TOOLS */ 
+#tools{
+
+}
+.toolsOdkaz img{
+    width: 80px;
 }
