@@ -12,7 +12,7 @@ header {
     height: auto;
     padding-bottom: 7vh;
 
-
+    padding-top: 10vh;
 }
 html {
   scroll-behavior: smooth;
@@ -27,7 +27,7 @@ html {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 10px;
-    font-size: 250%;
+    font-size: 270%;
     color: rgb(213, 98, 255);
     outline: 4px solid rgba(255, 255, 255, 0.307);
     outline-offset: -2px;
@@ -51,6 +51,11 @@ html {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(3.7px);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 10vh;
 }
 .ohraniceni{
     width: 80%;
@@ -78,8 +83,8 @@ html {
     width: 100px;
 }
 .navigace h1, a{
-    margin: 7% 0;
-    white-space: nowrap;
+    margin: 0;
+    white-space: wrap;
 }
 .logo h1{
     font-family: Kaushan Script;
@@ -88,6 +93,7 @@ html {
     color: rgb(212, 0, 255);    
     font-family: Agbalumo;
     border-bottom: 4px solid rgb(230, 0, 255);
+    white-space: nowrap;
 }
 
 .onPage {  
@@ -115,7 +121,6 @@ html {
     position: absolute;
     left: 0;
     border-radius: 10px;
-    padding: 10px;
     min-width: 150px;
     background-color: rgba(24, 91, 149, 0.87);
 }
@@ -163,9 +168,7 @@ html {
     justify-content: center;
 }
 #about{
-
     background-color: rgb(0, 0, 0);
-    
     
 
 }
@@ -204,7 +207,6 @@ html {
     text-align: center;
     margin-right: 5vw;
 }
-
 .aboutObdelnik{
     background: linear-gradient(to left, transparent, rgb(0, 0, 0));
     position: absolute;
@@ -216,8 +218,31 @@ html {
 
 /* TOOLS */ 
 #tools{
-
+    background: url(obrazky/pozadi3.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 2vh 0;    
 }
 .toolsOdkaz img{
-    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+.toolsKarticka{
+    background: rgba(0, 0, 0, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(56, 56, 56, 0.72);
+
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 3%;
+    margin-top: 10vh;
+}
+.toolsKarticka h2{
+    margin-top: 0;
 }
