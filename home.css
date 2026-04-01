@@ -218,16 +218,16 @@ html {
 
 /* TOOLS */ 
 #tools{
-    background: url(obrazky/pozadi3.jpg);
+    background: url(obrazky/pozadi3otocene.jpg);
     background-size: cover; 
-    background-position: center; 
+    background-position: top; 
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
     padding: 2vh 0;    
 }
 .toolsOdkaz img{
-    height: 80px;
+    height: 5vh;
     border-radius: 5px;
 }
 .toolsKarticka{
@@ -245,4 +245,15 @@ html {
 }
 .toolsKarticka h2{
     margin-top: 0;
+}
+.toolsText p{
+    color: rgb(255, 220, 179);
+    font-size: 2vh;
+    font-family: Kaushan Script;
+}
+.toolsText h2{
+    color: rgb(255, 177, 88);
+    font-family: Agbalumo;
+    font-size: 4vh;
+    margin: 0;
 }
