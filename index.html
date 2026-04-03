@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prima Home</title>
     <link rel="stylesheet" href="home.css">
+    <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,36 +74,42 @@
                     <h2>Tools</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consectetur accusantium id non dolorem consequatur voluptates, officia, enim exercitationem quisquam repudiandae ipsa incidunt qui reiciendis mollitia ipsam odit sint adipisci!</p>
                 </div>
-                <div class="toolsOdkaz">
-                    <div class="design">
-                        <a href="https://www.photopea.com/"><img src="https://cdn-1.webcatalog.io/catalog/photopea/photopea-icon-filled-256.png?v=1714775448924" alt="photopea"></a>
-                        <a href="https://www.figma.com/"><img src="https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png" alt="figma"></a>
-                        <a href="https://css.glass/"><img src="https://www.wont4getyounotes.com/wp-content/uploads/2025/06/img_4325-1-1024x692.png" alt="glass"></a>
-                        <a href="https://cssgradient.io/"><img src="https://blankimage.net/samples/gradient/1-gradient-image.png" alt="gradient"></a>
-                        <a href="https://www.fffuel.co/"><img src="https://cdn-1.webcatalog.io/catalog/fffuel/fffuel-icon-filled-256.png?v=1733302938085" alt="fffuel"></a>
-                        <a href="https://pattern.monster/"><img src="https://resourcesfordesigner.com/wp-content/uploads/2022/07/pattern-monster-400x300.jpg.webp" alt="pattern"></a>
-                    </div>
-                    <div class="editor">
-                        <a href="https://www.iloveimg.com/crop-image"><img src="https://www.iloveimg.com/img/iloveimg.svg" alt="CropImage"></a>
-                        <a href="https://grainrad.com/"><img src="https://pbs.twimg.com/profile_images/2014183667094913024/1aWndtmS_400x400.jpg" alt="grainrad"></a>
-
-                    </div>
-                    <div class="IT">
-                        <a href="https://app.diagrams.net/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Diagrams.net_Logo.svg/960px-Diagrams.net_Logo.svg.png" alt="drawio"></a>
-
-                    </div>
-                    <div class="other">
-                        <a href="https://chatgpt.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/250px-ChatGPT-Logo.svg.png" alt="chatGPT"></a>
-                        <a href="https://cursor.com/"><img src="https://paulstamatiou.com/gear/cursor-app-icon.png" alt="cursor"></a>
-                        <a href="https://grafana.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUF-muR9xjLAGhW8rtSHctBtCkQAfAbIIV-w&s" alt="grafana"></a>
-                        <a href="https://prometheus.io/"><img src="https://prometheus.io/twitter-image.png?b370f6418ef38b42" alt="prometheus"></a>
-                        <a href="https://github.com/features/actions"><img src="https://avatars.githubusercontent.com/u/54465427?v=4" alt="githubactions"></a>
-                        <a href="https://kubernetes.io/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/3840px-Kubernetes_logo_without_workmark.svg.png" alt="kubernetes"></a>
-                        <a href="https://www.w3schools.com/"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQG0bGi7bIhFpg/company-logo_200_200/company-logo_200_200/0/1730289270835/w3schools_academy_logo?e=2147483647&v=beta&t=4szA3r7P52L6vnWSsZI_SbOhT3e8ZYXM0w2-qBZOKuM" alt="w3schools"></a>
-
-
-                    </div>
+                <div class="toolsPanel">
+                    <button onclick="filterTools('all')">All</button>
+                    <button onclick="filterTools('design')">Design</button>
+                    <button onclick="filterTools('editor')">Editor</button>
+                    <button onclick="filterTools('IT')">IT</button>
+                    <button onclick="filterTools('other')">Other</button>
                 </div>
+
+                <div class="toolsOdkaz">
+                    <a href="https://www.photopea.com/" class="tool design" data-tooltip="Photopea"><img src="https://cdn-1.webcatalog.io/catalog/photopea/photopea-icon-filled-256.png?v=1714775448924" alt="photopea" class="design"></a>
+                    <a href="https://www.figma.com/" class="tool design" data-tooltip="Figma"><img src="https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png" alt="figma" class="design"></a>
+                    <a href="https://css.glass/" class="tool design" data-tooltip="CSS Glass"><img src="https://www.wont4getyounotes.com/wp-content/uploads/2025/06/img_4325-1-1024x692.png" alt="glass" class="design"></a>
+                    <a href="https://cssgradient.io/" class="tool design" data-tooltip="CSS Gradient"><img src="https://blankimage.net/samples/gradient/1-gradient-image.png" alt="gradient" ></a>
+                    <a href="https://www.fffuel.co/" class="tool design" data-tooltip="FFFUEL"><img src="https://cdn-1.webcatalog.io/catalog/fffuel/fffuel-icon-filled-256.png?v=1733302938085" alt="fffuel" ></a>
+                    <a href="https://pattern.monster/" class="tool design" data-tooltip="Pattern Monster"><img src="https://resourcesfordesigner.com/wp-content/uploads/2022/07/pattern-monster-400x300.jpg.webp" alt="pattern" ></a>
+
+
+                    <a href="https://www.iloveimg.com/crop-image" class="tool editor" data-tooltip="iLoveImg"><img src="https://www.iloveimg.com/img/iloveimg.svg" alt="CropImage"></a>
+                    <a href="https://grainrad.com/" class="tool editor" data-tooltip="Grainrad"><img src="https://pbs.twimg.com/profile_images/2014183667094913024/1aWndtmS_400x400.jpg" alt="grainrad"></a>
+
+
+
+                    <a href="https://github.com/" class="tool IT" data-tooltip="GitHub"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1200px-Github-desktop-logo-symbol.svg.png" alt="github"></a>
+                    <a href="https://app.diagrams.net/" class="tool IT" data-tooltip="Diagrams.net"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Diagrams.net_Logo.svg/960px-Diagrams.net_Logo.svg.png" alt="drawio"></a>
+                    <a href="https://cursor.com/" class="tool IT" data-tooltip="Cursor"><img src="https://paulstamatiou.com/gear/cursor-app-icon.png" alt="cursor"></a>
+                    <a href="https://grafana.com/" class="tool IT" data-tooltip="Grafana"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUF-muR9xjLAGhW8rtSHctBtCkQAfAbIIV-w&s" alt="grafana"></a>
+                    <a href="https://prometheus.io/" class="tool IT" data-tooltip="Prometheus"><img src="https://prometheus.io/twitter-image.png?b370f6418ef38b42" alt="prometheus"></a>
+                    <a href="https://github.com/features/actions" class="tool IT" data-tooltip="GitHub Actions"><img src="https://avatars.githubusercontent.com/u/54465427?v=4" alt="githubactions"></a>
+                    <a href="https://kubernetes.io/" class="tool IT" data-tooltip="Kubernetes"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/3840px-Kubernetes_logo_without_workmark.svg.png" alt="kubernetes"></a>
+                    <a href="https://www.w3schools.com/" class="tool IT" data-tooltip="W3Schools"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQG0bGi7bIhFpg/company-logo_200_200/company-logo_200_200/0/1730289270835/w3schools_academy_logo?e=2147483647&v=beta&t=4szA3r7P52L6vnWSsZI_SbOhT3e8ZYXM0w2-qBZOKuM" alt="w3schools"></a>
+
+
+                    <a href="https://chatgpt.com/" class="tool other" data-tooltip="ChatGPT"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/250px-ChatGPT-Logo.svg.png" alt="chatGPT"></a>
+
+                </div>
+                
             </div>
             
 
