@@ -15,6 +15,7 @@ header {
 
 html {
     scroll-behavior: smooth;
+    padding: 0;
 }
 
 /* NAVIGACNI PANEL */
@@ -55,7 +56,7 @@ html {
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 10vh;
+    height: auto;
 }
 
 .ohraniceni {
@@ -64,6 +65,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .navigace, .logo, .onPage, .otherPage {
@@ -75,7 +77,8 @@ html {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -331,7 +334,7 @@ header {
     width: 100%;
     height: auto;
     padding-bottom: 7vh;
-    padding-top: 10vh;
+    padding-top: 20vh;
 }
 
 html {
@@ -339,124 +342,7 @@ html {
 }
 
 /* NAVIGACNI PANEL */
-.navigace a {
-    position: relative;
-    display: block;
-    margin: auto 0;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 150%;
-    color: rgb(213, 98, 255);
-    outline: 4px solid rgba(255, 255, 255, 0.307);
-    outline-offset: -2px;
-    transition: all .3s ease;
-    background: rgba(255,255,255,0.1);
-    font-family: Kaushan Script;
-}
 
-.navigace a:hover {
-    transform: scale(0.9);
-    background: rgba(4, 0, 0, 0);
-    outline-offset: 3px;
-    outline-color: rgb(255, 89, 236);
-    color: rgb(241, 203, 255);
-}
-
-.navigace {
-    width: 100%;
-    padding: 10px 0;
-    background: rgba(0, 0, 0, 0.24);
-    border-radius: 0px 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(3.7px);
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    height: 10vh;
-}
-
-.ohraniceni {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo img {
-    width: 10vh;
-}
-
-.navigace h1, a {
-    margin: 0;
-}
-
-.logo h1 {
-    font-family: Kaushan Script;
-    font-weight: 400;
-    font-size: 250%;
-    color: rgb(212, 0, 255);
-    font-family: Agbalumo;
-    border-bottom: 4px solid rgb(230, 0, 255);
-    white-space: nowrap;
-}
-
-.onPage {
-    display: flex;
-    justify-content: center;
-}
-
-.otherPage {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
-.onPage ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown {
-    display: inline;
-    position: relative;
-    border-radius: 10px;
-}
-
-.dropdown-content {
-    width: 100%;
-    display: none;
-    position: absolute;
-    left: 0;
-    border-radius: 10px;
-    background-color: rgba(24, 91, 149, 0.87);
-}
-
-.dropdown-content a {
-    color: rgb(213, 98, 255);
-    display: block;
-    margin: 5px;
-}
-
-.dropdown-content a:hover {
-    color: rgb(255, 255, 255);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
-}
 
 /* PODNAVIIGACE */
 .welcome {
@@ -551,6 +437,7 @@ html {
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+    padding-bottom: 3vh;
 }
 #tools {
     scroll-margin-top: 4vh;
@@ -812,6 +699,8 @@ html {
     text-align: center;
     max-width: 150vh;
     margin: 0 auto;
+
+    scroll-margin-top: 13.5vh;
 }
 .leftG{
     
@@ -825,7 +714,7 @@ html {
     flex: 0 1 auto;
     transition: all .3s ease;
     
-    background-color: rgba(0, 0, 71, 0.552);
+    background-color: rgba(0, 0, 100, 0.552);
     border-radius: 2vh;
     border: rgb(116, 98, 0) solid;
     backdrop-filter: blur(4px);
@@ -839,22 +728,33 @@ html {
     padding: 2vh;
     padding-top: 0;
 }
+
+#games h2 {
+    color: rgb(204, 174, 0);
+    font-family: Agbalumo;
+    margin: 1vh;
+    transition: color 0.3s ease;
+}
+#games p {
+    font-family: Kaushan Script;
+    color: rgb(149, 127, 0);
+    margin: 0;
+    margin-bottom: 3vh;
+    transition: color 0.3s ease;
+}
 .rightG:hover, .leftG:hover{
     transform: scale(1.01);
     box-shadow: 0 5px 30px rgb(255, 217, 0);
     border: rgb(255, 229, 81) solid;
+    background-color: rgba(0, 0, 211, 0.552);
 }
-#games h2 {
-    color: rgb(255, 224, 50);
-    font-family: Agbalumo;
-    margin: 1vh;
+#games .leftG:hover h2,
+#games .rightG:hover h2 {
+    color: rgb(255, 222, 34);
 }
-#games p {
-    font-family: Kaushan Script;
-    color: rgb(255, 224, 46);
-    margin: 0;
-    margin-bottom: 3vh;
-    
+#games .leftG:hover p,
+#games .rightG:hover p {
+    color: rgb(255, 221, 25);
 }
 #games a img {
     height: 10vh;
@@ -877,7 +777,7 @@ html {
     filter: brightness(1); 
     box-shadow: 0 0 20px 5px rgba(255, 213, 0, 0.758);
 
-    background: radial-gradient(circle,rgba(63, 94, 251, 0) 20%, rgba(255, 226, 79, 0.758) 100%);
+    background: radial-gradient(circle,rgba(63, 94, 251, 0) 20%, rgba(255, 226, 79, 0.758) 90%);
 }
 #games a {
     position: relative;
@@ -885,7 +785,7 @@ html {
 #games a::before {
     content: attr(data-tooltip);
     position: absolute;
-    top: 120%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     background: rgb(0, 0, 0);
@@ -917,4 +817,112 @@ html {
         max-width: 90%;
         width: 100%;
     }
+}
+
+
+/* Contact */
+#contact a {
+    position: relative;
+}
+#contact a::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(0, 0, 0);
+    color: rgb(255, 136, 243);
+    padding: 0.8vh 1.5vh;
+    border-radius: 0.6vh;
+    font-family: Kaushan Script;
+    font-size: 1.8vh;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    border: 0.3vh solid rgb(0, 132, 255);
+    box-shadow: 0 0 2vh rgb(0, 183, 255);
+    z-index: 10;
+}
+#contact a:hover::before {
+    opacity: 1;
+}
+#contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    max-width: 90vw;
+
+    margin: 5vh auto 0;
+    padding: 8vh 6vh 4vh;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+#contact h2{
+    position: absolute;
+    z-index: 2;
+    padding: 2vh 4vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.716);
+    border-radius: 3vh 0;
+
+    color: rgb(220, 0, 198);
+    margin: 0;
+    text-align: left;
+    box-shadow: 0 0.4vh 0.8vh rgba(0,0,0,0.12);
+
+    font-family: Agbalumo;
+    font-size: 4vh;
+    font-weight: 400;
+}
+.contactPopisek{
+
+}
+.ohraniceniContact {
+
+}
+#contact img {
+    height: 10vh;
+    width: auto;
+    border-radius: 2vh;
+    transition: all 0.3s ease;
+}
+#contact img:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 2vh black;
+    border-color: rgb(255, 255, 255);
+}
+.contactsOdkaz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4vh;
+
+    width: 100%;
+    margin-top: 5vh;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(50, 0, 100, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%);
+    border-top: 2px solid rgb(255, 223, 252);
+    padding: 1vh 0;
+    margin-top: 0;
+    text-align: center;
+    color: rgb(255, 213, 251);
+    font-family: Kaushan Script;
+    font-size: 2.5vh;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
