@@ -10,12 +10,11 @@ header {
     width: 100%;
     height: auto;
     padding-bottom: 7vh;
-    padding-top: 10vh;
+    padding-top: 0vh;
 }
 
 html {
     scroll-behavior: smooth;
-    padding: 0;
 }
 
 /* NAVIGACNI PANEL */
@@ -52,11 +51,26 @@ html {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(3.7px);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
+
     position: fixed;
+    top: 0;
+
     top: 0;
     left: 0;
     z-index: 1000;
     height: auto;
+}
+
+@media (min-width: 768px) {
+    .navigace {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    header {
+        padding-top: 20vh;
+    }
 }
 
 .ohraniceni {
@@ -145,6 +159,12 @@ width: 90%;
 .dropdown:hover .dropdown-content {
     display: block;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .navigace {
+        position: static;
+    }
 }
 
 /* PODNAVIIGACE */
@@ -322,24 +342,7 @@ width: 90%;
     margin-bottom: 15px;
 }
 
-body {
-    margin: 0;
-}
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.43), rgba(212, 38, 206, 0.375), rgba(201, 46, 46, 0.318), rgb(0, 0, 0)), url(obrazky/pozadi1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    padding-bottom: 7vh;
-    padding-top: 20vh;
-}
-
-html {
-    scroll-behavior: smooth;
-}
 
 
 /* PODNAVIIGACE */
