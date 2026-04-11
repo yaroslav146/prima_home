@@ -24,12 +24,12 @@ html {
     display: block;
     margin: auto 0;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 150%;
+    padding: 1vh 2vh;
+    border-radius: 1.5vh;
+    font-size: 4vh;
     color: rgb(213, 98, 255);
-    outline: 4px solid rgba(255, 255, 255, 0.307);
-    outline-offset: -2px;
+    outline: 0.5vh solid rgba(255, 255, 255, 0.307);
+    outline-offset: -0.8vh;
     transition: all .3s ease;
     background: rgba(255,255,255,0.1);
     font-family: Kaushan Script;
@@ -47,7 +47,7 @@ html {
     width: 100%;
     padding: 10px 0;
     background: rgba(0, 0, 0, 0.24);
-    border-radius: 0px 16px;
+    border-radius: 0px 0px 16px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(3.7px);
@@ -60,12 +60,13 @@ html {
 }
 
 .ohraniceni {
-    width: 80%;
+width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 2vh;
+    flex-wrap: wrap;
 }
 
 .navigace, .logo, .onPage, .otherPage {
@@ -91,11 +92,9 @@ html {
 
 .logo h1 {
     font-family: Kaushan Script;
-    font-weight: 400;
-    font-size: 250%;
+    font-size: 6vh;
     color: rgb(212, 0, 255);
     font-family: Agbalumo;
-    border-bottom: 4px solid rgb(230, 0, 255);
     white-space: nowrap;
 }
 
@@ -107,7 +106,9 @@ html {
 .otherPage {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1vh;
 }
 
 .onPage ul {
@@ -169,7 +170,6 @@ html {
 /* OBSAH */
 /* ABOUT SECTION */
 .ohraniceniAbout {
-    max-width: 70vw;
     display: flex;
     align-items: stretch;
     overflow: hidden;
@@ -341,8 +341,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* NAVIGACNI PANEL */
-
 
 /* PODNAVIIGACE */
 .welcome {
@@ -435,9 +433,10 @@ html {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     padding-bottom: 3vh;
+    min-height: 100vh; /* Добавлено для покрытия всей высоты на узких экранах */
 }
 #tools {
     scroll-margin-top: 4vh;
@@ -583,10 +582,10 @@ html {
     border: 2px solid #c42323;
     border-radius: 10px;
 
-    margin: 2vh auto;
+    margin: 0 auto; /* Убрал верхний margin для устранения зазора */
+    margin-bottom: 0;
     max-width: 800px;
     max-width: 100vh;
-    margin-bottom: 50px;
     
     scroll-margin-top: 13.5vh;
 }
@@ -857,6 +856,7 @@ html {
     max-width: 90vw;
 
     margin: 5vh auto 0;
+    margin-top: 0;
     padding: 8vh 6vh 4vh;
 
     background: rgba(255, 255, 255, 0.2);
