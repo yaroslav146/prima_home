@@ -1,19 +1,178 @@
 body{
-    background-image: url(obrazky/pozadi4.jpg);
+    background-image: url(obrazky/pozadi2otocene.jpg);
     background-size: cover; 
-    background-position: center; 
+    background-position: top; 
     background-repeat: no-repeat;
-    height: 100vh;
-    width: auto;
+}
+body {
     margin: 0;
 }
-header{
 
+
+/* NAVIGACNI PANEL */
+header {
+    padding-bottom: 5vh;
 }
-.logo img{
-    width: 100px;
+.navigace a {
+    position: relative;
+    display: block;
+    margin: auto 0;
+    text-decoration: none;
+    padding: 1vh 2vh;
+    border-radius: 1.5vh;
+    font-size: 4vh;
+    color: rgb(255, 97, 12);
+    outline: 0.5vh solid rgba(255, 255, 255, 0.307);
+    outline-offset: -0.8vh;
+    transition: all .3s ease;
+    background: rgba(255,255,255,0.1);
+    font-family: Kaushan Script;
 }
-.navigace div{
+.navigace a:hover {
+    transform: scale(0.9);
+    background: rgba(4, 0, 0, 0);
+    outline-offset: 3px;
+    outline-color: rgb(227, 79, 0);
+    color: rgb(203, 246, 255);
+}
+.navigace {
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(39, 39, 39, 0.663);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 0.2vh solid rgb(188, 188, 188);
+
+    position: fixed;
+    top: 0;
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .navigace {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    header {
+        padding-top: 15vh;
+    }
+}
+.ohraniceni {
+width: 90%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vh;
+    flex-wrap: wrap;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+.navigace h1, a {
+    margin: 0;
+}
+.logo h1 {
+    font-size: 6vh;
+    color: rgb(255, 97, 12);
+    font-family: Agbalumo;
+    white-space: nowrap;
+}
+.otherPage {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+@media (max-width: 768px) {
+    .navigace {
+        position: static;
+    }
+}
+.otherPage .curent{
+    transform: scale(0.9);
+    background: rgba(4, 0, 0, 0);
+    outline-offset: 3px;
+    outline-color: rgb(227, 79, 0);
+    color: rgb(203, 246, 255);
+}
+
+
+/* MEMES CONTENT */
+section {
+    width: 100%;
+    height: auto;
+    padding-bottom: 7vh;
+
+    
+}
+.container {
+    
+    column-count: 4;
+    column-gap: 2vh;
+    max-width: 120vh;
+    margin: 0 auto;
+    padding: 2vh;
+    margin-top: 1vh;
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1vh;
+  border-radius: 1.5vh;
+  transition: transform 0.3s ease;
+}
+.container img:hover {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+p {
+    font-family: Kaushan Script;
+    color: rgb(101, 242, 255);
+
+    max-width: 120vh;
+    margin: 0 auto;
+    padding: 2vh;
+
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.item {
+  break-inside: avoid;
+  margin-bottom: 1vh;
+}
+@media (max-width: 768px) {
+    .container {
+        
+        column-count: 2;
+        column-gap: 2vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    p {
+        margin: 0 2vh;
+    }
 }
