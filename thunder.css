@@ -1,0 +1,318 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/* NAVIGACNI PANEL */
+.navigace a {
+    position: relative;
+    display: block;
+    margin: auto 0;
+    text-decoration: none;
+    padding: 1vh 2vh;
+    font-size: 4vh;
+    color: rgb(82, 255, 128);
+    outline: 0.5vh solid rgba(82, 255, 128, 1);
+    
+    transform: scale(0.9);
+    width: 14vh;
+    height: auto;
+    text-align: center;
+    
+
+    outline-color: rgba(82, 255, 128, 1);
+    color: rgba(82, 255, 128, 1);
+
+
+    transition: all .3s ease;
+    
+    font-family: Iosevka Charon Mono;
+}
+.navigace a:hover {
+    background-image: url(obrazky/avia_button\ .jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 0 4vh rgb(255, 77, 0);
+
+    outline-color: rgb(180, 54, 0);
+    color: rgba(155, 47, 0, 0.699);
+    text-shadow: 0 0 2vh rgb(255, 0, 0), 0 0 4vh rgb(255, 255, 255);
+}
+.navigace {
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(39, 39, 39, 0.663);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-bottom: 0.2vh solid rgb(188, 188, 188);
+
+    position: fixed;
+    top: 0;
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .navigace {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+
+}
+.ohraniceni {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vh;
+    flex-wrap: wrap;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+.navigace h1, a {
+    margin: 0;
+}
+.logo h1 {
+    font-size: 6vh;
+    color: rgb(82, 255, 128);
+    font-family: Iosevka Charon Mono;
+    white-space: nowrap;
+}
+.otherPage {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+@media (max-width: 768px) {
+    .navigace {
+        position: static;
+    }
+    
+}
+.otherPage .curent{
+    background-image: url(obrazky/avia_button\ .jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 0 4vh rgb(255, 77, 0);
+
+    outline-color: rgb(180, 54, 0);
+    color: rgba(155, 47, 0, 0.699);
+    text-shadow: 0 0 2vh rgb(255, 0, 0), 0 0 4vh rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+
+/* VIDEO */
+.video-wrapper {
+    position: relative;
+    top: 0vh;
+    
+    height: 80vh;
+    width: 100%;
+
+    z-index: 0;
+}
+.video-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 25%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.286) 80%,
+        rgb(0, 0, 0) 100%
+    );
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* LOGO */
+.wtlogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -70%);
+
+    max-width: 70vh;
+    width: 100%;
+
+    z-index: 2;
+}
+
+
+/* ODKAZY */
+section{
+    padding: 10vh 2vh;
+}
+.ohranicenius {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    flex-wrap: wrap;
+}
+.cardus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardus img {
+    height: 12vh;
+    width: auto;
+
+    border: 0.3vh solid rgb(82, 255, 128);
+    border-radius: 1vh;
+
+
+    background: rgba(0,0,0,0.4);
+
+    transition: 0.3s;
+}
+.cardus img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2vh rgb(82, 255, 128);
+}
+.cardus p {
+    margin-top: 1vh;
+    color: rgb(82, 255, 128);
+    font-family: Iosevka Charon Mono;
+}
+section h2 {
+    text-align: center;
+    color: rgb(82, 255, 128);
+    font-size: 5vh;
+    margin-bottom: 5vh;
+    font-family: Iosevka Charon Mono;
+    text-decoration: underline;
+}
+.linksus{
+    border: 0.3vh solid rgb(82, 255, 128);
+    background: rgba(10, 10, 10, 0.85);
+    box-shadow: 0 0 3vh rgba(82, 255, 128, 0.25);
+    background-color: rgb(17, 17, 17);
+    max-width: 100vh;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .wtlogo{
+        transform: translate(-50%, -30%);
+    }
+}
+
+
+/* FAVORITE VEHICLE */
+.fvcard {
+    max-width: 150vh;
+    margin: 6vh auto;
+    padding: 3vh;
+    border: 0.3vh solid rgb(82, 255, 128);
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 0 3vh rgba(82, 255, 128, 0.25);
+    font-family: Iosevka Charon Mono;
+    color: rgb(82, 255, 128);
+}
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    margin-bottom: 5vh;
+    align-items: flex-start;
+}
+.left-info {
+    flex: 1.2;
+    text-align: center;
+    min-width: 280px;
+}
+.left-info img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(0 0 2vh rgba(82, 255, 128, 0.3));
+}
+.left-info h3 {
+    font-size: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+.right-stats {
+    flex: 0.8;
+    min-width: 250px;
+    border: 0.2vh solid rgb(82, 255, 128);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2vh;
+}
+.right-stats p:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 0;
+}
+.right-stats p:last-child {
+    margin-bottom: 0;
+}
+.weapons-wrapper {
+    border: 0.2vh solid rgb(82, 255, 128);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2vh;
+}
+.suspended-title {
+    font-size: 3.5vh;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 0 2vh 0;
+    font-weight: bold;
+}
+.weapons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+.weapon-col {
+    flex: 1;
+    min-width: 200px;
+}
+.weapon-col p {
+    margin: 0;
+    line-height: 1.8;
+}
+.weapon-col ul {
+    margin: 0;
+    padding-left: 2vh;
+    line-height: 1.8;
+}
+.weapon-col li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 0vh;
+}
