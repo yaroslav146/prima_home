@@ -228,7 +228,7 @@ section h2 {
 }
 @media (max-width: 768px) {
     .wtlogo{
-        transform: translate(-50%, -30%);
+        transform: translate(-50%, -10%);
     }
 }
 
