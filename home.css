@@ -439,7 +439,7 @@ width: 90%;
     width: auto;
     height: 100%;
     padding-bottom: 3vh;
-    min-height: 100vh; /* Добавлено для покрытия всей высоты на узких экранах */
+    min-height: 100vh;
 }
 #tools {
     scroll-margin-top: 4vh;
@@ -561,6 +561,7 @@ width: 90%;
     border-radius: 1vh;
     border: 0.2vh solid rgba(255, 255, 255, 0.248);
     transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.162);
 }
 
 .toolsOdkaz img:hover {
