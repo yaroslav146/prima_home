@@ -20,8 +20,8 @@ header {
     outline: 0.5vh solid rgba(82, 255, 128, 1);
     
     transform: scale(0.9);
-    width: 14vh;
     height: auto;
+    width: 14vh;
     text-align: center;
     
 
@@ -207,6 +207,7 @@ section{
 }
 .cardus p {
     margin-top: 1vh;
+    font-size: 3vh;
     color: rgb(82, 255, 128);
     font-family: Iosevka Charon Mono;
 }
@@ -258,13 +259,13 @@ section h2 {
 }
 .left-info img {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
     filter: drop-shadow(0 0 2vh rgba(82, 255, 128, 0.3));
 }
 .left-info h3 {
     font-size: 5vh;
-    margin-top: 1vh;
+    margin-top: -10vh;
     margin-bottom: 0;
 }
 .right-stats {
@@ -273,6 +274,7 @@ section h2 {
     border: 0.2vh solid rgb(82, 255, 128);
     background: rgba(0, 0, 0, 0.5);
     padding: 2vh;
+    font-size: 110%;
 }
 .right-stats p:first-child {
     font-weight: bold;
@@ -316,6 +318,7 @@ section h2 {
     list-style-type: none;
     position: relative;
     padding-left: 0vh;
+    font-size: 110%;
 }
 
 

@@ -27,6 +27,8 @@ header {
     transition: all .3s ease;
     background: rgba(255,255,255,0.1);
     font-family: Kaushan Script;
+    width: 14vh;
+    text-align: center;
 }
 .navigace a:hover {
     background: rgba(4, 0, 0, 0);
@@ -147,18 +149,19 @@ section {
 }
 section p {
     font-family: Kaushan Script;
-    color: rgb(101, 242, 255);
+    color: rgb(255, 255, 255);
 
     max-width: 120vh;
-    margin: 0 auto;
+    margin: 2vh auto;
     padding: 2vh;
-
+    
     background: rgba(0, 0, 0, 0.3);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 4vh;
 }
 .item {
   break-inside: avoid;

@@ -28,6 +28,8 @@ header {
     transition: all .3s ease;
     background: rgba(255,255,255,0.1);
     font-family: Kaushan Script;
+    width: 14vh;
+    text-align: center;
 }
 .navigace a:hover {
     background: rgba(4, 0, 0, 0);
