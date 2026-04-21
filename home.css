@@ -924,6 +924,16 @@ footer {
     backdrop-filter: blur(10px);
 }
 
+#animeGIF {
+    position: fixed;
+    bottom: 0;
+    right: 4vh;
+    width: 30vh;
+    height: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .ohraniceniAbout img {
         display: none;
@@ -940,5 +950,9 @@ footer {
     }
     .half h2 {
         margin-right: 0;
+    }
+    #animeGIF {
+        width: 20vh;
+        right: 2vh;
     }
 }
