@@ -170,6 +170,7 @@ header {
     width: 100%;
 
     z-index: 2;
+    opacity: 0.8;
 }
 
 
@@ -265,7 +266,7 @@ section h2 {
 }
 .left-info h3 {
     font-size: 5vh;
-    margin-top: -10vh;
+    margin-top: -15%;
     margin-bottom: 0;
 }
 .right-stats {
@@ -335,4 +336,22 @@ footer {
     font-size: 2.5vh;
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
+}
+
+
+#tankGIF {
+    position: fixed;
+    bottom: 0;
+    right: 4vh;
+    width: 30vh;
+    height: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #tankGIF {
+        width: 20vh;
+        right: 2vh;
+    }
 }

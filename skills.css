@@ -273,3 +273,22 @@ footer {
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
 }
+
+
+#spongebobGIF {
+    position: fixed;
+    bottom: 0;
+    left: 4vh;
+    width: 30vh;
+    height: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #spongebobGIF {
+        width: 20vh;
+        left: 2vh;
+    }
+}
+

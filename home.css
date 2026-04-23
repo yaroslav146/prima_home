@@ -777,9 +777,8 @@ width: 90%;
 #games a img:hover {
     animation: shake 0.4s infinite linear;
     filter: brightness(1); 
-    box-shadow: 0 0 20px 5px rgba(255, 213, 0, 0.758);
 
-    background: radial-gradient(circle,rgba(63, 94, 251, 0) 20%, rgba(255, 226, 79, 0.758) 90%);
+    filter: drop-shadow(0 0 2vh rgb(255, 238, 0));
 }
 #games a {
     position: relative;
