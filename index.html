@@ -6,54 +6,46 @@
     <title>Prima Home</title>
     <link rel="stylesheet" href="home.css">
     <script src="script.js" defer></script>
+    <script src="gif.js" defer></script>
     <link rel="icon" href="obrazky/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=DynaPuff:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
         <div class="navigace">
             <div class="ohraniceni">
-            <div class="logo">
-                
-                <h1>Prima Home</h1>
-            </div>
-            
-
-            
-            <div class="otherPage">
-                <a href="skills.html">Skills</a>
-                <a href="thunder.html">Thunder</a>
-                <a href="memes.html">Memes</a>
-
-                <div class="onPage">
-                <ul>
-                    <li class="dropdown">
-                        <a href="#">Navigation</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#tools">Tools</a></li>
-                            <li><a href="#oakm">OAKM</a></li>
-                            <li><a href="#games">Games</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                <div class="logo">
+                    <h1>Prima Home</h1>
+                </div>
+                <div class="otherPage">
+                    <a href="skills.html">Skills</a>
+                    <a href="thunder.html">Thunder</a>
+                    <a href="memes.html">Memes</a>
+                    <div class="onPage">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#">Navigation</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#tools">Tools</a></li>
+                                    <li><a href="#oakm">OAKM</a></li>
+                                    <li><a href="#games">Games</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
                 </div>
             </div>
-
-            </div>
-            
         </div>
         <div class="welcome">
             <h1>Welcome to Prima Home!</h1>
             <p><b>Your ultimate home destination</b></p>
         </div>
     </header>
-
 
     <section>
         <div id="about">
@@ -63,150 +55,127 @@
                         <h2>▼About▼</h2>
                         <p>This website is created to bring together all my projects, tools, and entertainment in one place. Here, you can find useful work tools, mini-games, memes, and information about the website itself.</p>
                     </div>
-
                     <div class="aboutObdelnik"> </div>
                 </div>
                 <img src="https://static.wikia.nocookie.net/1a70c5c3-dc5a-42da-b0c2-fcd1f247927c/scale-to-width/755" alt="gem">
             </div>
         </div>
         <div class="pozadi">
-                <div id="tools">
-            <div class="toolsKarticka">
-                <div class="toolsText">
-                    <h2>Tools</h2>
-                    <p>This section brings together a collection of useful tools for design, editing, and development. Whether you need to create graphics, edit images, or work on coding projects, you’ll find quick access to everything in one place. Explore and filter the tools to match your needs and boost your productivity.</p>
-                </div>
-                <div class="toolsPanel">
-                    <button onclick="filterTools('all')">All</button>
-                    <button onclick="filterTools('design')">Design</button>
-                    <button onclick="filterTools('editor')">Editor</button>
-                    <button onclick="filterTools('IT')">IT</button>
-                    <button onclick="filterTools('microsoft')">Microsoft</button>
-                    <button onclick="filterTools('other')">Other</button>
-
-                </div>
-
-                <div class="toolsOdkaz">
-                    <a href="https://www.photopea.com/" class="tool design" data-tooltip="Photopea"><img src="https://cdn-1.webcatalog.io/catalog/photopea/photopea-icon-filled-256.png?v=1714775448924" alt="photopea" class="tool design"></a>
-                    <a href="https://www.figma.com/" class="tool design" data-tooltip="Figma"><img src="https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png" alt="figma" class="tool design"></a>
-                    <a href="https://css.glass/" class="tool design" data-tooltip="CSS Glass"><img src="https://www.wont4getyounotes.com/wp-content/uploads/2025/06/img_4325-1-1024x692.png" alt="glass" class="tool design"></a>
-                    <a href="https://cssgradient.io/" class="tool design" data-tooltip="CSS Gradient"><img src="https://blankimage.net/samples/gradient/1-gradient-image.png" alt="gradient" class="tool design"></a>
-                    <a href="https://www.fffuel.co/" class="tool design" data-tooltip="FFFUEL"><img src="https://cdn-1.webcatalog.io/catalog/fffuel/fffuel-icon-filled-256.png?v=1733302938085" alt="fffuel" class="tool design"></a>
-                    <a href="https://pattern.monster/" class="tool design" data-tooltip="Pattern Monster"><img src="https://resourcesfordesigner.com/wp-content/uploads/2022/07/pattern-monster-400x300.jpg.webp" alt="pattern" class="tool design"></a>
-                    <a href="https://reactbits.dev/get-started/installation" class="tool design" data-tooltip="React Bits"><img src="https://collections.designzig.com/_astro/reactbits.AoiZCKrp_15TSTK.webp" alt="reactbits" class="tool design"></a>
-
-
-
-                    <a href="https://www.iloveimg.com/crop-image" class="tool editor" data-tooltip="iLoveImg"><img src="https://www.iloveimg.com/img/iloveimg.svg" alt="CropImage" class="tool editor"></a>
-                    <a href="https://grainrad.com/" class="tool editor" data-tooltip="Grainrad"><img src="https://pbs.twimg.com/profile_images/2014183667094913024/1aWndtmS_400x400.jpg" alt="grainrad" class="tool editor"></a>
-
-
-                    <a href="https://github.com/" class="tool IT" data-tooltip="GitHub"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/250px-Github-desktop-logo-symbol.svg.png" alt="github" class="tool IT"></a>
-                    <a href="https://app.diagrams.net/" class="tool IT" data-tooltip="Diagrams.net"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Diagrams.net_Logo.svg/960px-Diagrams.net_Logo.svg.png" alt="drawio" class="tool IT"></a>
-                    <a href="https://cursor.com/" class="tool IT" data-tooltip="Cursor"><img src="https://paulstamatiou.com/gear/cursor-app-icon.png" alt="cursor" class="tool IT"></a>
-                    <a href="https://grafana.com/" class="tool IT" data-tooltip="Grafana"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUF-muR9xjLAGhW8rtSHctBtCkQAfAbIIV-w&s" alt="grafana" class="tool IT"></a>
-                    <a href="https://prometheus.io/" class="tool IT" data-tooltip="Prometheus"><img src="https://prometheus.io/twitter-image.png?b370f6418ef38b42" alt="prometheus" class="tool IT"></a>
-                    <a href="https://github.com/features/actions" class="tool IT" data-tooltip="GitHub Actions"><img src="https://avatars.githubusercontent.com/u/54465427?v=4" alt="githubactions" class="tool IT"></a>
-                    <a href="https://kubernetes.io/" class="tool IT" data-tooltip="Kubernetes"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/3840px-Kubernetes_logo_without_workmark.svg.png" alt="kubernetes" class="tool IT"></a>
-                    <a href="https://www.w3schools.com/" class="tool IT" data-tooltip="W3Schools"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQG0bGi7bIhFpg/company-logo_200_200/company-logo_200_200/0/1730289270835/w3schools_academy_logo?e=2147483647&v=beta&t=4szA3r7P52L6vnWSsZI_SbOhT3e8ZYXM0w2-qBZOKuM" alt="w3schools" class="tool IT"></a>
-
-
-                    <a href="https://oakm-my.sharepoint.com/" class="tool microsoft" data-tooltip="OneDrive"><img src="https://res.public.onecdn.static.microsoft/owamail/hashed-v1/resources/images/onedrive_24x-hash-e0d279de.m.svg" alt="onedrive" class="tool microsoft"></a>
-                    <a href="https://office.com/" class="tool microsoft" data-tooltip="Office 365"><img src="https://res.public.onecdn.static.microsoft/midgard/versionless/officestartresources/copilot_20_light_and_dark.svg" alt="office365" class="tool microsoft"></a>
-                    <a href="https://outlook.office.com/mail/" class="tool microsoft" data-tooltip="Onedrive"><img src="https://res.cdn.office.net/midgard/versionless/fluentui-resources/1.1.6/assets/brand-icons/product/svg/outlook_24x1.svg" alt="outlook" class="tool microsoft"></a>
-
-
-                    <a href="https://chatgpt.com/" class="tool other" data-tooltip="ChatGPT"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/250px-ChatGPT-Logo.svg.png" alt="chatGPT" class="tool other"></a>
-
-
-                </div>
-                
-            </div>
-            
-
-        </div>
-        <div id="oakm">
-            <div class="oakm_obsah">
-                <div class="top">
-                    <h2>OAKM</h2>
-                </div>
-                <div class="oakm_bottom">
-                    <div class="left">
-                    <p>OAKM, or Obchodní Akademie Kroměříž, is a prestigious commercial academy located in Kroměříž, Czech Republic. Founded to provide high-quality education in business, economics, and administration, the school prepares students for successful careers in commerce, finance, and related fields. With a focus on practical skills, modern teaching methods, and digital tools, OAKM equips graduates with the knowledge and competencies needed in today's competitive job market.</p>
-                </div>
-                <div class="right">
-                    <a href="https://www.oakm.cz/" data-tooltip="OAKM Official Website"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6fU1m3JvzQghSTEjS3ICO-RZCeIFvz7BTw&s" alt="oakm"></a>
-                    <a href="https://www.oakm.cz/moodle/" data-tooltip="Moodle Learning Platform"><img src="https://images.icon-icons.com/2415/PNG/512/moodle_original_logo_icon_146420.png" alt="moodle"></a>
-                    <a href="https://bakaweb.oakm.cz/" data-tooltip="Bakalaři School System"><img src="https://www.bakalari.cz/images/logos/bakalari-nova-tvar-02.png" alt="bakalare"></a>
-                    <a href="https://it.oakm.cz/" data-tooltip="IT Department"><img src="https://it.oakm.cz/wp-content/uploads/2022/01/mb.png" alt="it_oakm"></a>
-                    <a href="https://ples.oakm.cz/" data-tooltip="OAKM Ball"><img src="https://lh4.googleusercontent.com/proxy/-QHWMZ3OADRfILxCgp9YCnu7V-hVGpoV1g3JXLEyqtz1DEEw2GlFUmHukYvHJYNonZdpqPmo2V0TLoKZZ8sU_wUhZP7omkaIFQvrUW3Zxg" alt="ples_oakm"></a>
-                    <a href="https://icanteen.oakm.cz/faces/login.jsp" data-tooltip="OAKM Canteen"><img src="https://www.zsostrcilova.cz/image.php?oid=13055074" alt="jidelna"></a>
-                </div>
+            <div id="tools">
+                <div class="toolsKarticka">
+                    <div class="toolsText">
+                        <h2>Tools</h2>
+                        <p>This section brings together a collection of useful tools for design, editing, and development. Whether you need to create graphics, edit images, or work on coding projects, you’ll find quick access to everything in one place. Explore and filter the tools to match your needs and boost your productivity.</p>
+                    </div>
+                    <div class="toolsPanel">
+                        <button onclick="filterTools('all')">All</button>
+                        <button onclick="filterTools('design')">Design</button>
+                        <button onclick="filterTools('editor')">Editor</button>
+                        <button onclick="filterTools('IT')">IT</button>
+                        <button onclick="filterTools('microsoft')">Microsoft</button>
+                        <button onclick="filterTools('other')">Other</button>
+                    </div>
+                    <div class="toolsOdkaz">
+                        <a href="https://www.photopea.com/" class="tool design" data-tooltip="Photopea"><img src="https://cdn-1.webcatalog.io/catalog/photopea/photopea-icon-filled-256.png?v=1714775448924" alt="photopea" class="tool design"></a>
+                        <a href="https://www.figma.com/" class="tool design" data-tooltip="Figma"><img src="https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png" alt="figma" class="tool design"></a>
+                        <a href="https://css.glass/" class="tool design" data-tooltip="CSS Glass"><img src="https://www.wont4getyounotes.com/wp-content/uploads/2025/06/img_4325-1-1024x692.png" alt="glass" class="tool design"></a>
+                        <a href="https://cssgradient.io/" class="tool design" data-tooltip="CSS Gradient"><img src="https://blankimage.net/samples/gradient/1-gradient-image.png" alt="gradient" class="tool design"></a>
+                        <a href="https://www.fffuel.co/" class="tool design" data-tooltip="FFFUEL"><img src="https://cdn-1.webcatalog.io/catalog/fffuel/fffuel-icon-filled-256.png?v=1733302938085" alt="fffuel" class="tool design"></a>
+                        <a href="https://pattern.monster/" class="tool design" data-tooltip="Pattern Monster"><img src="https://resourcesfordesigner.com/wp-content/uploads/2022/07/pattern-monster-400x300.jpg.webp" alt="pattern" class="tool design"></a>
+                        <a href="https://reactbits.dev/get-started/installation" class="tool design" data-tooltip="React Bits"><img src="https://collections.designzig.com/_astro/reactbits.AoiZCKrp_15TSTK.webp" alt="reactbits" class="tool design"></a>
+                        <a href="https://www.iloveimg.com/crop-image" class="tool editor" data-tooltip="iLoveImg"><img src="https://www.iloveimg.com/img/iloveimg.svg" alt="CropImage" class="tool editor"></a>
+                        <a href="https://grainrad.com/" class="tool editor" data-tooltip="Grainrad"><img src="https://pbs.twimg.com/profile_images/2014183667094913024/1aWndtmS_400x400.jpg" alt="grainrad" class="tool editor"></a>
+                        <a href="https://github.com/" class="tool IT" data-tooltip="GitHub"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/250px-Github-desktop-logo-symbol.svg.png" alt="github" class="tool IT"></a>
+                        <a href="https://app.diagrams.net/" class="tool IT" data-tooltip="Diagrams.net"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Diagrams.net_Logo.svg/960px-Diagrams.net_Logo.svg.png" alt="drawio" class="tool IT"></a>
+                        <a href="https://cursor.com/" class="tool IT" data-tooltip="Cursor"><img src="https://paulstamatiou.com/gear/cursor-app-icon.png" alt="cursor" class="tool IT"></a>
+                        <a href="https://grafana.com/" class="tool IT" data-tooltip="Grafana"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUF-muR9xjLAGhW8rtSHctBtCkQAfAbIIV-w&s" alt="grafana" class="tool IT"></a>
+                        <a href="https://prometheus.io/" class="tool IT" data-tooltip="Prometheus"><img src="https://prometheus.io/twitter-image.png?b370f6418ef38b42" alt="prometheus" class="tool IT"></a>
+                        <a href="https://github.com/features/actions" class="tool IT" data-tooltip="GitHub Actions"><img src="https://avatars.githubusercontent.com/u/54465427?v=4" alt="githubactions" class="tool IT"></a>
+                        <a href="https://kubernetes.io/" class="tool IT" data-tooltip="Kubernetes"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/3840px-Kubernetes_logo_without_workmark.svg.png" alt="kubernetes" class="tool IT"></a>
+                        <a href="https://www.w3schools.com/" class="tool IT" data-tooltip="W3Schools"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQG0bGi7bIhFpg/company-logo_200_200/company-logo_200_200/0/1730289270835/w3schools_academy_logo?e=2147483647&v=beta&t=4szA3r7P52L6vnWSsZI_SbOhT3e8ZYXM0w2-qBZOKuM" alt="w3schools" class="tool IT"></a>
+                        <a href="https://oakm-my.sharepoint.com/" class="tool microsoft" data-tooltip="OneDrive"><img src="https://res.public.onecdn.static.microsoft/owamail/hashed-v1/resources/images/onedrive_24x-hash-e0d279de.m.svg" alt="onedrive" class="tool microsoft"></a>
+                        <a href="https://office.com/" class="tool microsoft" data-tooltip="Office 365"><img src="https://res.public.onecdn.static.microsoft/midgard/versionless/officestartresources/copilot_20_light_and_dark.svg" alt="office365" class="tool microsoft"></a>
+                        <a href="https://outlook.office.com/mail/" class="tool microsoft" data-tooltip="Onedrive"><img src="https://res.cdn.office.net/midgard/versionless/fluentui-resources/1.1.6/assets/brand-icons/product/svg/outlook_24x1.svg" alt="outlook" class="tool microsoft"></a>
+                        <a href="https://chatgpt.com/" class="tool other" data-tooltip="ChatGPT"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/250px-ChatGPT-Logo.svg.png" alt="chatGPT" class="tool other"></a>
+                    </div>
                 </div>
             </div>
 
-            
+            <div id="oakm">
+                <div class="oakm_obsah">
+                    <div class="top">
+                        <h2>OAKM</h2>
+                    </div>
+                    <div class="oakm_bottom">
+                        <div class="left">
+                            <p>OAKM, or Obchodní Akademie Kroměříž, is a prestigious commercial academy located in Kroměříž, Czech Republic. Founded to provide high-quality education in business, economics, and administration, the school prepares students for successful careers in commerce, finance, and related fields. With a focus on practical skills, modern teaching methods, and digital tools, OAKM equips graduates with the knowledge and competencies needed in today's competitive job market.</p>
+                        </div>
+                        <div class="right">
+                            <a href="https://www.oakm.cz/" data-tooltip="OAKM Official Website"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6fU1m3JvzQghSTEjS3ICO-RZCeIFvz7BTw&s" alt="oakm"></a>
+                            <a href="https://www.oakm.cz/moodle/" data-tooltip="Moodle Learning Platform"><img src="https://images.icon-icons.com/2415/PNG/512/moodle_original_logo_icon_146420.png" alt="moodle"></a>
+                            <a href="https://bakaweb.oakm.cz/" data-tooltip="Bakalaři School System"><img src="https://www.bakalari.cz/images/logos/bakalari-nova-tvar-02.png" alt="bakalare"></a>
+                            <a href="https://it.oakm.cz/" data-tooltip="IT Department"><img src="https://it.oakm.cz/wp-content/uploads/2022/01/mb.png" alt="it_oakm"></a>
+                            <a href="https://ples.oakm.cz/" data-tooltip="OAKM Ball"><img src="https://lh4.googleusercontent.com/proxy/-QHWMZ3OADRfILxCgp9YCnu7V-hVGpoV1g3JXLEyqtz1DEEw2GlFUmHukYvHJYNonZdpqPmo2V0TLoKZZ8sU_wUhZP7omkaIFQvrUW3Zxg" alt="ples_oakm"></a>
+                            <a href="https://icanteen.oakm.cz/faces/login.jsp" data-tooltip="OAKM Canteen"><img src="https://www.zsostrcilova.cz/image.php?oid=13055074" alt="jidelna"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </div>
-
-            
-        
-        <div id="games">
-            <div class="leftG">
-                <div class="ohraniceniG">
+            <div id="games">
+                <div class="leftG">
+                    <div class="ohraniceniG">
                         <h2>Online Games</h2>
-                    <p>Here are some online fun games you can play!</p>
-                    <a href="https://rocketbotroyale2.winterpixel.io/" class="hry_obr" data-tooltip="Rocket Bot Royale"><img src="https://static.wixstatic.com/media/d0c5be_340d3a8d80104f39b07a297380a979a0~mv2.png/v1/fill/w_280,h_157,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/rbr-logo.png" alt="Rocket Bot Royale"></a>
-                    <a href="https://shellshock.io/" data-tooltip="Shell Shockers"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvo4srxHC0D5e2-TmDYqSyMsermNAlXUfcA&s" alt="shellshock"></a>
-                    <a href="https://krunker.io/?game=FRA:wm04n" data-tooltip="Krunker"><img src="https://cdn2.steamgriddb.com/icon_thumb/7faa6534e1d63c4c2c4b318135100acf.png" alt="krunker"></a>
-                    <a href="https://venge.io/" data-tooltip="Venge.io"><img src="https://venge.io/favicon-96x96.png?qc-size=256,256" alt="venge"></a>
-                    <a href="https://zombsroyale.io/" data-tooltip="Zombs Royale"><img src="https://upload.wikimedia.org/wikipedia/fr/4/4f/ZombsRoyale_Logo.png" alt="zombsroyale"></a>
-                    <a href="https://ev.io/" data-tooltip="Ev.io"><img src="https://store-images.s-microsoft.com/image/apps.35131.14590179089318162.e8298b9f-0554-4cb5-ae4f-5a704864515b.aefa2dbd-ce7f-45f0-8798-ee13b9501c6e" alt="evio"></a>
-                    <a href="https://miniroyale.io/" data-tooltip="Mini Royale"><img src="https://assets.games.gg/Icon_500_x_500_77b9d2c336/Icon_500_x_500_77b9d2c336.png" alt="nations"></a>
+                        <p>Here are some online fun games you can play!</p>
+                        <a href="https://rocketbotroyale2.winterpixel.io/" class="hry_obr" data-tooltip="Rocket Bot Royale"><img src="https://static.wixstatic.com/media/d0c5be_340d3a8d80104f39b07a297380a979a0~mv2.png/v1/fill/w_280,h_157,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/rbr-logo.png" alt="Rocket Bot Royale"></a>
+                        <a href="https://shellshock.io/" data-tooltip="Shell Shockers"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvo4srxHC0D5e2-TmDYqSyMsermNAlXUfcA&s" alt="shellshock"></a>
+                        <a href="https://krunker.io/?game=FRA:wm04n" data-tooltip="Krunker"><img src="https://cdn2.steamgriddb.com/icon_thumb/7faa6534e1d63c4c2c4b318135100acf.png" alt="krunker"></a>
+                        <a href="https://venge.io/" data-tooltip="Venge.io"><img src="https://venge.io/favicon-96x96.png?qc-size=256,256" alt="venge"></a>
+                        <a href="https://zombsroyale.io/" data-tooltip="Zombs Royale"><img src="https://upload.wikimedia.org/wikipedia/fr/4/4f/ZombsRoyale_Logo.png" alt="zombsroyale"></a>
+                        <a href="https://ev.io/" data-tooltip="Ev.io"><img src="https://store-images.s-microsoft.com/image/apps.35131.14590179089318162.e8298b9f-0554-4cb5-ae4f-5a704864515b.aefa2dbd-ce7f-45f0-8798-ee13b9501c6e" alt="evio"></a>
+                        <a href="https://miniroyale.io/" data-tooltip="Mini Royale"><img src="https://assets.games.gg/Icon_500_x_500_77b9d2c336/Icon_500_x_500_77b9d2c336.png" alt="nations"></a>
+                    </div>
                 </div>
-                
+                <div class="rightG">
+                    <div class="ohraniceniG">
+                        <h2>Desktop Games</h2>
+                        <p>Here are some desktop games you can install for free!</p>
+                        <a href="https://warthunder.com/en" data-tooltip="War Thunder"><img src="https://warthunder.com/i/opengraph-wt.jpg" alt="warthunder"></a>
+                        <a href="https://www.leagueoflegends.com/cs-cz/" data-tooltip="League of Legends"><img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9eb028de391e65072d06e77f06d0955f66b9fa2c-736x316.png?accountingTag=LoL&auto=format&fit=fill&q=80&w=575" alt="leagueoflegends"></a>
+                        <a href="https://zenless.hoyoverse.com/en-us/" data-tooltip="Zenless Zone Zero"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Zenless_Zone_Zero_curved_box_logo.svg/960px-Zenless_Zone_Zero_curved_box_logo.svg.png" alt="ZenlessZoneZero"></a>
+                        <a href="https://www.dota2.com/news?l=czech" data-tooltip="Dota 2"><img src="https://images.seeklogo.com/logo-png/28/2/dota-2-logo-png_seeklogo-284923.png" alt="dota"></a>
+                        <a href="https://www.callofduty.com/warzone" data-tooltip="Call of Duty Warzone"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Call_of_Duty_2023_logo_2.svg/3840px-Call_of_Duty_2023_logo_2.svg.png" alt="callofduty"></a>
+                        <a href="https://playvalorant.com/en-gb/" data-tooltip="Valorant"><img src="https://images.seeklogo.com/logo-png/37/1/valorant-logo-png_seeklogo-379976.png" alt="valorant"></a>
+                        <a href="https://www.counter-strike.net/cs2?l=czech" data-tooltip="Counter-Strike 2"><img src="https://1000logos.net/wp-content/uploads/2025/10/Counter-Strike-2-CS2-%E2%80%93-A-Modern-Evolution-2023%E2%80%93Present-3.png" alt="CS"></a>
+                        <a href="https://pubg.com/en/events/xenopointchallenge" data-tooltip="PUBG"><img src="https://m.media-amazon.com/images/I/714vaW2G-ZL._AC_UF1000,1000_QL80_.jpg" alt="pubg"></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="rightG">
-                <div class="ohraniceniG">
-                    <h2>Desktop Games</h2>
-                    <p>Here are some desktop games you can install for free!</p>
-                    <a href="https://warthunder.com/en" data-tooltip="War Thunder"><img src="https://warthunder.com/i/opengraph-wt.jpg" alt="warthunder"></a>
-                    <a href="https://www.leagueoflegends.com/cs-cz/" data-tooltip="League of Legends"><img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9eb028de391e65072d06e77f06d0955f66b9fa2c-736x316.png?accountingTag=LoL&auto=format&fit=fill&q=80&w=575" alt="leagueoflegends"></a>
-                    <a href="https://zenless.hoyoverse.com/en-us/" data-tooltip="Zenless Zone Zero"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Zenless_Zone_Zero_curved_box_logo.svg/960px-Zenless_Zone_Zero_curved_box_logo.svg.png" alt="ZenlessZoneZero"></a>
-                    <a href="https://www.dota2.com/news?l=czech" data-tooltip="Dota 2"><img src="https://images.seeklogo.com/logo-png/28/2/dota-2-logo-png_seeklogo-284923.png" alt="dota"></a>
-                    <a href="https://www.callofduty.com/warzone" data-tooltip="Call of Duty Warzone"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Call_of_Duty_2023_logo_2.svg/3840px-Call_of_Duty_2023_logo_2.svg.png" alt="callofduty"></a>
-                    <a href="https://playvalorant.com/en-gb/" data-tooltip="Valorant"><img src="https://images.seeklogo.com/logo-png/37/1/valorant-logo-png_seeklogo-379976.png" alt="valorant"></a>
-                    <a href="https://www.counter-strike.net/cs2?l=czech" data-tooltip="Counter-Strike 2"><img src="https://1000logos.net/wp-content/uploads/2025/10/Counter-Strike-2-CS2-%E2%80%93-A-Modern-Evolution-2023%E2%80%93Present-3.png" alt="CS"></a>
-                    <a href="https://pubg.com/en/events/xenopointchallenge" data-tooltip="PUBG"><img src="https://m.media-amazon.com/images/I/714vaW2G-ZL._AC_UF1000,1000_QL80_.jpg" alt="pubg"></a>
-            </div>
-        </div>
-
-        </div>
-        <div id="contact">
-            <div class="contactPopisek">
-                <h2>My contacts: </h2>
-            </div>
-            <div class="ohraniceniContact">
-            <div class="contactsOdkaz">
-                    <a href="https://github.com/yaroslav146" data-tooltip="GitHub">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/250px-Github-desktop-logo-symbol.svg.png" alt="GitHub">
-                    </a>
-                    <a href="https://cz.linkedin.com/in/yaroslav-lovkin-313859389" data-tooltip="LinkedIn" id="linkedin">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://t.me/yroslav_146" data-tooltip="Telegram"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/960px-Telegram_2019_Logo.svg.png" alt="telegram"></a>
-                    <a href="https://www.instagram.com/yroslav_146/" data-tooltip="Instagram"><img src="https://unblast.com/wp-content/uploads/2025/07/instagram-logo-colored.jpg" alt="instagram"></a>
+            <div id="contact">
+                <div class="contactPopisek">
+                    <h2>My contacts:</h2>
+                </div>
+                <div class="ohraniceniContact">
+                    <div class="contactsOdkaz">
+                        <a href="https://github.com/yaroslav146" data-tooltip="GitHub">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/250px-Github-desktop-logo-symbol.svg.png" alt="GitHub">
+                        </a>
+                        <a href="https://cz.linkedin.com/in/yaroslav-lovkin-313859389" data-tooltip="LinkedIn" id="linkedin">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://t.me/yroslav_146" data-tooltip="Telegram"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/960px-Telegram_2019_Logo.svg.png" alt="telegram"></a>
+                        <a href="https://www.instagram.com/yroslav_146/" data-tooltip="Instagram"><img src="https://unblast.com/wp-content/uploads/2025/07/instagram-logo-colored.jpg" alt="instagram"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
+
     <footer>
         <p>© 2026 Prima Home | Created with passion</p>
     </footer>
 
-    <img src="obrazky/animeGIF.gif" alt="animeGIF" id="animeGIF">
+    <img src="obrazky/animeGIF.gif" alt="animeGIF" id="animeGIF" class="draggable-gif">
 </body>
 </html>

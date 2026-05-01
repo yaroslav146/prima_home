@@ -931,6 +931,8 @@ footer {
     height: auto;
     z-index: 1000;
     transition: transform 0.3s ease;
+    cursor: grab;
+    user-select: none;
 }
 
 @media (max-width: 768px) {
