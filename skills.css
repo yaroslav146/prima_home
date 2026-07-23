@@ -14,7 +14,7 @@ header {
     padding-bottom: 5vh;
     z-index: 1000;
 }
-.navigace a {
+.navigace .otherPage a {
     position: relative;
     display: block;
     margin: auto 0;
@@ -28,16 +28,17 @@ header {
     transition: all .3s ease;
     background: rgba(255,255,255,0.1);
     font-family: Kaushan Script;
-    width: 14vh;
+    width: 15vh;
     text-align: center;
+    text-wrap: nowrap;
 }
-.navigace a:hover {
+.navigace .otherPage a:hover {
     background: rgba(4, 0, 0, 0);
     outline-offset: 3px;
     outline-color: rgb(227, 79, 0);
     color: rgb(203, 246, 255);
 }
-.navigace {
+.navigace  {
     width: 100%;
     padding: 10px 0;
     background: rgba(39, 39, 39, 0.663);
@@ -81,6 +82,9 @@ width: 90%;
     gap: 12px;
     flex-shrink: 0;
 }
+.logo a{
+    text-decoration: none;
+}
 .navigace h1, a {
     margin: 0;
 }
@@ -108,7 +112,6 @@ width: 90%;
     outline-offset: 3px;
     outline-color: rgb(227, 79, 0);
     color: rgb(203, 246, 255);
-    
 }
 
 .top a {
@@ -194,8 +197,8 @@ width: 90%;
 .bottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap; /* ВАЖНО */
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .progress {

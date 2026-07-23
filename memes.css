@@ -13,7 +13,7 @@ body {
 header {
     padding-bottom: 5vh;
 }
-.navigace a {
+.navigace .otherPage a {
     position: relative;
     display: block;
     margin: auto 0;
@@ -27,10 +27,11 @@ header {
     transition: all .3s ease;
     background: rgba(255,255,255,0.1);
     font-family: Kaushan Script;
-    width: 14vh;
+    width: 15vh;
+    text-wrap: nowrap;
     text-align: center;
 }
-.navigace a:hover {
+.navigace .otherPage a:hover {
     background: rgba(4, 0, 0, 0);
     outline-offset: 3px;
     outline-color: rgb(227, 79, 0);
@@ -80,6 +81,9 @@ width: 90%;
     gap: 12px;
     flex-shrink: 0;
 }
+.logo a{
+    text-decoration: none;
+}
 .navigace h1, a {
     margin: 0;
 }
@@ -116,15 +120,13 @@ section {
     width: 100%;
     height: auto;
     padding-bottom: 7vh;
-
-    
 }
 .container {
     
     column-count: 4;
     column-gap: 2vh;
     max-width: 120vh;
-    margin: 0 auto;
+    margin: 2vh;
     padding: 2vh;
     margin-top: 1vh;
 
@@ -152,7 +154,7 @@ section p {
     color: rgb(255, 255, 255);
 
     max-width: 120vh;
-    margin: 2vh auto;
+    margin: 2vh;
     padding: 2vh;
     
     background: rgba(0, 0, 0, 0.3);
@@ -162,6 +164,12 @@ section p {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 4vh;
+}
+.mid{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
 }
 .item {
   break-inside: avoid;
@@ -211,3 +219,49 @@ footer {
         height: 30vh;
     }
 }
+
+/* Image modal (gallery) */
+.image-modal{
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.88);
+    z-index: 3000;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.image-modal.visible{
+    display: flex;
+    opacity: 1;
+}
+.image-modal img{
+    width: auto;
+    height: 70%;
+    max-width: 70%;
+    border-radius: 0.8rem;
+    object-fit: contain;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    transform: scale(0.98);
+    transition: transform 0.25s ease;
+}
+.image-modal.visible img{ transform: scale(1); }
+.image-modal .modal-close{
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease;
+}
+.image-modal .modal-close:hover{ background: rgba(255,255,255,0.16); }

@@ -9,7 +9,7 @@ header {
 
 
 /* NAVIGACNI PANEL */
-.navigace a {
+.navigace .otherPage a {
     position: relative;
     display: block;
     margin: auto 0;
@@ -21,9 +21,9 @@ header {
     
     transform: scale(0.9);
     height: auto;
-    width: 14vh;
+    width: 15vh;
     text-align: center;
-    
+    text-wrap: nowrap;
 
     outline-color: rgba(82, 255, 128, 1);
     color: rgba(82, 255, 128, 1);
@@ -33,7 +33,7 @@ header {
     
     font-family: Iosevka Charon Mono;
 }
-.navigace a:hover {
+.navigace .otherPage a:hover {
     background-image: url(obrazky/avia_button\ .jpg);
     background-size: cover;
     background-position: center;
@@ -86,6 +86,9 @@ header {
     align-items: center;
     gap: 12px;
     flex-shrink: 0;
+}
+.logo a{
+    text-decoration: none;
 }
 .navigace h1, a {
     margin: 0;

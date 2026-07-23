@@ -2,23 +2,17 @@ body {
     margin: 0;
 }
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.43), rgba(212, 38, 206, 0.375), rgba(201, 46, 46, 0.318), rgb(0, 0, 0)), url(obrazky/pozadi1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    padding-bottom: 7vh;
-    padding-top: 0vh;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
+.logo a{
+    text-decoration: none;
+}
+
 /* NAVIGACNI PANEL */
-.navigace a {
+.navigace .otherPage a {
+    width: 15vh;
     position: relative;
     display: block;
     margin: auto 0;
@@ -32,9 +26,11 @@ html {
     transition: all .3s ease;
     background: rgba(255,255,255,0.1);
     font-family: Kaushan Script;
+    text-wrap: nowrap;
+    text-align: center;
 }
 
-.navigace a:hover {
+.navigace .otherPage a:hover {
     transform: scale(0.9);
     background: rgba(4, 0, 0, 0);
     outline-offset: 3px;
@@ -73,6 +69,150 @@ html {
     }
 }
 
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 0.8rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    background: transparent;
+    border-right: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    z-index: 1100;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-nav li {
+    margin: 0;
+}
+
+.sidebar-nav a {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: rgb(255 255 255 / 18%);
+    transition: all 1.5s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    gap: 0;
+    backdrop-filter: blur(3px);
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    background: rgba(114, 114, 114, 0.357);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    width: 2.8rem;
+    height: 2.8rem;
+    box-shadow: inset 0 0 0 0.05rem #ffffff;
+}
+
+.sidebar-nav a.active {
+    width: auto;
+    height: 3rem;
+    flex-direction: row;
+    padding: 0.1rem 0.8rem;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.58);
+    border-radius: 0.8rem;
+    box-shadow: inset 0 0 0 0.1rem #ffffff;
+}
+
+.sidebar-nav a .icon {
+    font-size: 1.4rem;
+    transition: transform 0.25s ease;
+}
+
+.sidebar-nav a .label {
+    position: absolute;
+    left: 100%;
+    margin-left: 0.4rem;
+
+
+    color: rgb(255, 255, 255);
+
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.6rem;
+
+    font-family: Poppins;
+    font-size: 0.9rem;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    transform: translateX(-10px);
+
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+
+}
+
+.sidebar-nav a:hover .label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sidebar-nav a.active .icon {
+    transform: scale(1.2);
+}
+
+.sidebar-nav a.active .label {
+    position: static;
+
+    opacity: 1;
+    transform: none;
+
+    padding: 0;
+    margin-left: 0.5rem;
+
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    transition: all 0.1s ease;
+}
+
+.sidebar-nav a:hover .label {
+    opacity: 1;
+    width: auto;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        opacity: 0;
+    }
+}
+
 .ohraniceni {
 width: 90%;
     margin: 0 auto;
@@ -83,7 +223,7 @@ width: 90%;
     flex-wrap: wrap;
 }
 
-.navigace, .logo, .onPage, .otherPage {
+.navigace, .logo, .otherPage {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,53 +252,12 @@ width: 90%;
     white-space: nowrap;
 }
 
-.onPage {
-    display: flex;
-    justify-content: center;
-}
-
 .otherPage {
     display: flex;
     justify-content: flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1vh;
-}
-
-.onPage ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown {
-    display: inline;
-    position: relative;
-    border-radius: 10px;
-}
-
-.dropdown-content {
-    width: 100%;
-    display: none;
-    position: absolute;
-    left: 0;
-    border-radius: 10px;
-    background-color: rgba(24, 91, 149, 0.87);
-}
-
-.dropdown-content a {
-    color: rgb(213, 98, 255);
-    display: block;
-    margin: 5px;
-}
-
-.dropdown-content a:hover {
-    color: rgb(255, 255, 255);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -249,10 +348,7 @@ width: 90%;
 
 /* TOOLS */
 #tools {
-    background: url(obrazky/pozadi3otocene.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+
     width: 100%;
     height: auto;
     padding: 2vh 0;
@@ -736,6 +832,7 @@ width: 90%;
     font-family: Agbalumo;
     margin: 1vh;
     transition: color 0.3s ease;
+    border-bottom: 0.2vh solid;
 }
 #games p {
     font-family: Kaushan Script;

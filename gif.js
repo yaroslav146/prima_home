@@ -187,9 +187,67 @@ function makeGifDraggable(gifElement) {
 }
 
 // ---------- AUTOMATICKÉ SPUŠTĚNÍ PRO VŠECHNY GIFY S TŘÍDOU "draggable-gif" ----------
+// Create a simple image modal (gallery-style) and expose open/close helpers
+function createImageModal() {
+    const modal = document.createElement('div');
+    modal.className = 'image-modal';
+
+    const img = document.createElement('img');
+    img.alt = '';
+    modal.appendChild(img);
+
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'modal-close';
+    closeBtn.innerHTML = '&times;';
+    modal.appendChild(closeBtn);
+
+    function open(src, alt) {
+        img.src = src;
+        img.alt = alt || '';
+        modal.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+        modal.classList.remove('visible');
+        document.body.style.overflow = '';
+        // clear src to stop GIFs
+        img.src = '';
+    }
+
+    // click outside or close button closes
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target === closeBtn) close();
+    });
+
+    // ESC to close
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('visible')) close();
+    });
+
+    document.body.appendChild(modal);
+
+    // expose helper
+    return { open, close };
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const allDraggableGifs = document.querySelectorAll('.draggable-gif');
     allDraggableGifs.forEach(gif => {
         makeGifDraggable(gif);
     });
+
+    // Initialize simple gallery on images with class 'item' (memes page)
+    const items = document.querySelectorAll('.item');
+    if (items.length) {
+        const modal = createImageModal();
+        items.forEach(el => {
+            el.style.cursor = 'zoom-in';
+            el.addEventListener('click', () => {
+                // use full-size src if available via data-large, otherwise use src
+                const src = el.dataset.large || el.src || el.getAttribute('src');
+                modal.open(src, el.alt || '');
+            });
+        });
+    }
 });
