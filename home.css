@@ -2,6 +2,17 @@ body {
     margin: 0;
 }
 
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.43), rgba(212, 38, 206, 0.375), rgba(201, 46, 46, 0.318), rgb(0, 0, 0)), url(obrazky/pozadi1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding-bottom: 7vh;
+    padding-top: 0vh;
+}
+
 html {
     scroll-behavior: smooth;
 }
