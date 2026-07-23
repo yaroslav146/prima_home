@@ -280,7 +280,7 @@ width: 90%;
 /* MUSIC PLAYER */
 .player{
     z-index: 1000;
-    width:297.5px;
+    width:290px;
     height:476px;
 
     background:url(images/patern_background.png);
@@ -309,11 +309,12 @@ width: 90%;
 .record-area{
     width:255px;
     height:255px;
-    margin-top:21.25px;
+    margin-top:13px;
     display:flex;
     justify-content:center;
     align-items:center;
     background: rgba(0, 0, 0, 0.71);
+    backdrop-filter: blur(1px);
     border: solid 2px rgba(89, 89, 89, 1);
     border-radius: 10%;
 }
@@ -321,6 +322,7 @@ width: 90%;
 .record{
     width:229.5px;
     transition:.3s;
+    margin: 7px;
 }
 
 @keyframes spin{
@@ -355,7 +357,7 @@ width: 90%;
     color: white;
     margin: 0;
     font-size: 25.5px;
-
+    margin-top: 10px;
 }
 
 #progress{
@@ -365,11 +367,12 @@ width: 90%;
 
 #next-song{
     color:white;
-    margin-top:17px;
+    margin-top:20px;
 }
 
 .bottom{
     background: rgba(0, 0, 0, 0.71);
+    backdrop-filter: blur(1px);
     width: 100%;
     height: 100%;
     display: flex;
