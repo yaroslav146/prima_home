@@ -1,7 +1,10 @@
 body {
     margin: 0;
 }
-
+html::-webkit-scrollbar {
+  width: 0px; /* скрывает полосу прокрутки */
+  background: transparent;
+}
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.43), rgba(212, 38, 206, 0.375), rgba(201, 46, 46, 0.318), rgb(0, 0, 0)), url(obrazky/pozadi1.jpg);
     background-size: cover;

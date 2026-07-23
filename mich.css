@@ -2,7 +2,10 @@ body {
     margin: 0;
     background: rgb(152, 152, 152);
 }
-
+html::-webkit-scrollbar {
+  width: 0px; /* скрывает полосу прокрутки */
+  background: transparent;
+}
 html {
     scroll-behavior: smooth;
 }

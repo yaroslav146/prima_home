@@ -6,7 +6,10 @@ header {
     padding-top: 0;
     padding-bottom: 0;
 }
-
+html::-webkit-scrollbar {
+  width: 0px; /* скрывает полосу прокрутки */
+  background: transparent;
+}
 
 /* NAVIGACNI PANEL */
 .navigace .otherPage a {

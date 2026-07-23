@@ -8,7 +8,10 @@ body {
     margin: 0;
 
 }
-
+html::-webkit-scrollbar {
+  width: 0px; /* скрывает полосу прокрутки */
+  background: transparent;
+}
 /* NAVIGACNI PANEL */
 header {
     padding-bottom: 5vh;
