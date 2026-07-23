@@ -237,6 +237,15 @@ document.addEventListener('DOMContentLoaded', () => {
         makeGifDraggable(gif);
     });
 
+    document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('loading')) {
+            img.setAttribute('loading', 'lazy');
+        }
+        if (!img.hasAttribute('decoding')) {
+            img.setAttribute('decoding', 'async');
+        }
+    });
+
     // Initialize simple gallery on images with class 'item' (memes page)
     const items = document.querySelectorAll('.item');
     if (items.length) {

@@ -277,6 +277,128 @@ width: 90%;
     }
 }
 
+/* MUSIC PLAYER */
+.player{
+    z-index: 1000;
+    width:297.5px;
+    height:476px;
+
+    background:url(images/patern_background.png);
+    background-size:cover;
+
+    border-radius:30px;
+    border:6px solid #443ec9;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    overflow:hidden;
+
+    position:fixed;
+    right:-260px;
+    top:50%;
+    transform:translateY(-50%);
+
+    transition:all 1s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.37%, 0.81 63.64%, 0.85 65.91%, 0.89 68.18%, 1 72.73%, 1 77.27%, 1 81.82%, 1 86.36%, 1 90.91%, 1 95.45%,1 100%);
+}
+.player:hover{
+    transform:translate(-270px,-50%);
+    transition: all 1s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.37%, 0.81 63.64%, 0.85 65.91%, 0.89 68.18%, 1 72.73%, 1 77.27%, 1 81.82%, 1 86.36%, 1 90.91%, 1 95.45%, 1 100%);
+}
+.record-area{
+    width:255px;
+    height:255px;
+    margin-top:21.25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: rgba(0, 0, 0, 0.71);
+    border: solid 2px rgba(89, 89, 89, 1);
+    border-radius: 10%;
+}
+
+.record{
+    width:229.5px;
+    transition:.3s;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.record.playing{
+    animation:spin 5s linear infinite;
+}
+
+.controls{
+    display:flex;
+    gap:34px;
+    margin-top:21.25px;
+    margin: 17px auto;
+}
+
+.controls button{
+    font-size:29.75px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+#song-name{
+    color: white;
+    margin: 0;
+    font-size: 25.5px;
+
+}
+
+#progress{
+    width:221px;
+    margin-top: 0;
+}
+
+#next-song{
+    color:white;
+    margin-top:17px;
+}
+
+.bottom{
+    background: rgba(0, 0, 0, 0.71);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-top: solid 2px rgba(89, 89, 89, 1);
+}
+
+.time{
+
+    width:221px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:white;
+
+    font-size:12.75px;
+
+    margin-top:5px;
+
+}
+
+
+
+
 /* PODNAVIIGACE */
 .welcome {
     color: rgba(191, 241, 255, 0.234);
@@ -1037,7 +1159,7 @@ footer {
     right: 4vh;
     width: 30vh;
     height: auto;
-    z-index: 1000;
+    z-index: 500;
     transition: transform 0.3s ease;
     cursor: grab;
     user-select: none;

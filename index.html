@@ -45,6 +45,40 @@
         </div>
     </header>
 
+    <div class="player">
+
+    <div class="record-area">
+        <img src="images/disk.png" class="record">
+    </div>
+
+    <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+    </div>
+    
+    <div class="bottom">
+        <h2 id="song-name">Unshatter</h2>
+
+        <input
+            type="range"
+            id="progress"
+            value="0"
+            min="0"
+            max="100">
+        <div class="time">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+        <p id="next-song">
+            Next: DAMIDAMI
+        </p>
+    </div>
+    
+
+    <audio id="audio"></audio>
+    </div>
+
     <section>
         <div id="about">
             <div class="ohraniceniAbout">
