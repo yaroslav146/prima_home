@@ -139,7 +139,8 @@ img{
 }
 @media (max-width: 768px){
     .obsah{
-        margin-top: 0;
+        margin-top: 2vh;
+        flex-direction: column-reverse;
     }
     .right img{
         height: 20vh;
